@@ -1,0 +1,19 @@
+.button {
+    &__languages {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 1px;
+        padding: 5px 7px;
+        border-radius: 8px;
+        border: none;
+        background-color: transparent;
+        color: $white-color;
+        cursor: pointer;
+
+        &:hover,
+        &.active {
+            background: $accent-color;
+        }
+    }
+}

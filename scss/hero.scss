@@ -1,0 +1,29 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(../images/background_symbol.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+
+    &__body {
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 46px;
+        color: $white-color;
+    }
+
+    &__scroll-link {
+        position: absolute;
+        bottom: 30px;
+
+        &:hover {
+            .icon > * {
+                stroke: $accent-color;
+            }
+        }
+    }
+}
