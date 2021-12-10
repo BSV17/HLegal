@@ -1,0 +1,88 @@
+.clients {
+    &__container {
+        padding: 60px 0 0;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        text-align: center;
+        color: $dark-blue;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    &__item {
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &_hillel {
+            background: #1C4280;
+        }
+
+        &_wannabiz {
+            background: #143646;
+        }
+
+        &_tapgerine {
+            background: #F48B30;
+        }
+
+        &_threedlook {
+            background: #9E4DC3;
+        }
+
+        &_orangear {
+            background: #FD9339
+        }
+
+        &_adtelligent {
+            background: #E2E2E4;
+        }
+
+        &_clickky {
+            background: #C71C36;
+        }
+
+        &_eco {
+            background: #DCF3F9;
+        }
+
+        &_ingratek {
+            background: #EAEAEA;
+        }
+
+        &_city {
+            background: #282240;
+        }
+
+        &_artprint {
+            background: #1D4568;
+        }
+
+        &_ultimatecard {
+            background: #000000
+        }
+    }
+
+
+    @media (min-width: 768px) {
+        &__list {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    @media (min-width: 1024px) {
+        &__list {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}

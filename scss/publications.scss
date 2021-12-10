@@ -1,0 +1,36 @@
+.publications {
+    &__container {
+        padding-top: 30px;
+        background: $grey-bg;
+    }
+
+    &__link {
+        display: block;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        color: $blue;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+
+        &:hover {
+            color: $pink;
+
+            .icon > * {
+                stroke: $pink;
+            }
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 46px;
+        background: $red-text-gradient;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 30px;
+    }
+}

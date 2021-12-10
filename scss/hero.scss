@@ -6,14 +6,20 @@
     background-image: url(../images/background_symbol.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     position: relative;
 
+    &__container {
+        display: flex;
+        justify-content: center;
+    }
+
     &__body {
+        text-align: center;
         font-weight: 700;
         font-size: 38px;
         line-height: 46px;
-        color: $white-color;
+        color: $white;
     }
 
     &__scroll-link {
@@ -22,8 +28,13 @@
 
         &:hover {
             .icon > * {
-                stroke: $accent-color;
+                stroke: $pink;
             }
         }
+    }
+
+    @media (min-width: 768px) {
+        background-size: contain;
+
     }
 }

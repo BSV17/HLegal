@@ -1,0 +1,82 @@
+.benefits {
+    padding: 60px 0 30px;
+
+    &__container {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__tabs {
+        display: flex;
+        padding: 0 40px;
+        flex-direction: column;
+        // паддинг 260 <экраны
+    }
+
+    &__tabs-list {
+        display: flex;
+        padding-bottom: 60px; //паддинг справа
+        border-bottom: 4px solid rgba(255, 255, 255, 0.3); //бордер справа
+        min-width: 440px;
+    }
+
+    &__tab {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 30px;
+
+        &.active {
+            .benefits__tab-button {
+                background: $red-text-gradient-reversed;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+        
+        &:hover {
+            .benefits__tab-button {
+                color: $pink;
+                background: none;
+                -webkit-background-clip: initial;
+                -webkit-text-fill-color: initial;
+            }
+        }
+    }
+
+    &__tab-button {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 46px;
+        padding: 0;
+        color: $grey;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    &__tab-panel {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 60px; //left
+    }
+
+    &__tab-title {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        color: $white;
+        margin-bottom: 30px;
+    }
+
+    &__tab-description {
+        font-size: 19px;
+        line-height: 30px;
+        color: $white;
+    }
+
+    @media (min-width: 768px) {
+            display: flex;
+    }
+}
