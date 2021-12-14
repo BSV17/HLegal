@@ -1,0 +1,95 @@
+.team {
+    padding: 60px 0;
+
+    &__link {
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        color: $blue;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+
+        &:hover {
+            color: $pink;
+
+            .icon > * {
+                stroke: $pink;
+            }
+        }
+    }
+
+    &__member {
+        background-color: $grey-bg;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+
+        &-photo {
+            border-radius: 12px 12px 0 0;
+            object-fit: cover;
+            height: 500px;
+        }
+
+        &-info {
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+        }
+
+        &-quote {
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 37px;
+            background: $red-text-gradient;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 30px;
+        }
+
+        &-name {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            color: $grey;
+            margin-bottom: 6px;
+        }
+
+        &-position {
+            font-size: 14px;
+            line-height: 22px;
+            color: $grey;
+        }
+    }
+
+    .slick-slider {
+        &.slick-initialized .slick-slide {
+            display: flex;
+        }
+
+        .slick-dots {
+            position: initial;
+            padding-top: 30px;
+
+            li button:before {
+                content: "";
+                background: $blue;
+                border-radius: 50%;
+                height: 16px;
+                width: 16px;
+            }
+        }
+    }
+
+    @media (min-width: 1024px) {
+        &__member {
+            flex-direction: row;
+
+            &-photo {
+                border-radius: 12px 0 0 12px;
+                height: 400px;
+            }
+        }
+    }
+}

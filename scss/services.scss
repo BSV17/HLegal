@@ -1,6 +1,10 @@
 .services {
     padding: 15px 0 60px;
 
+    .services-page & {
+        padding: 40px 0 60px;
+    }
+
     &__link {
         text-decoration: none;
         font-weight: 700;
@@ -22,8 +26,8 @@
 
     &__title {
         font-weight: 700;
-        font-size: 38px;
-        line-height: 46px;
+        font-size: 30px;
+        line-height: 37px;
         background: $red-text-gradient;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -55,8 +59,14 @@
     }
 
     @media (min-width: 768px) {
+        .services-page & {
+            padding: 60px 0 60px;
+        }
+
         &__title {
             margin-bottom: 60px;
+            font-size: 38px;
+            line-height: 46px;
         }
     
         &__items {

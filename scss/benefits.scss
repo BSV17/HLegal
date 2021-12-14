@@ -49,8 +49,8 @@
     &__tab-button {
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
-        font-size: 38px;
-        line-height: 46px;
+        font-size: 30px;
+        line-height: 37px;
         padding: 0;
         color: $grey;
         border: none;
@@ -67,8 +67,8 @@
 
     &__tab-title {
         font-weight: 700;
-        font-size: 30px;
-        line-height: 37px;
+        font-size: 20px;
+        line-height: 24px;
         color: $white;
         margin-bottom: 30px;
     }
@@ -85,6 +85,16 @@
         &__tabs-list {
             padding-bottom: 60px;
             min-width: 440px;
+        }
+
+        &__tab-title {
+            font-size: 30px;
+            line-height: 37px;
+        }
+
+        &__tab-button {
+            font-size: 38px;
+            line-height: 46px;
         }
 
         &__tab-panel {
